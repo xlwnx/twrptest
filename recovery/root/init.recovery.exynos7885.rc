@@ -1,0 +1,10 @@
+on init
+    write /sys/class/backlight/panel/brightness 200
+    # unlink /efs > /mnt/vendor/efs
+    rm /efs
+    mkdir /efs
+    mkdir /sec_efs
+
+on boot
+    # MTP
+    setprop sys.usb.config mtp,adb

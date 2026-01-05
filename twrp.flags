@@ -1,0 +1,12 @@
+# Additional flags for TWRP
+/system_image   emmc    /dev/block/platform/13500000.dwmmc0/by-name/system      flags=backup=1;flashimg=1
+/vendor         ext4    /dev/block/platform/13500000.dwmmc0/by-name/vendor      flags=display="Vendor";backup=1
+/vendor_image   emmc    /dev/block/platform/13500000.dwmmc0/by-name/vendor      flags=backup=1;flashimg=1
+/product        ext4    /dev/block/platform/13500000.dwmmc0/by-name/product     flags=display="Product";backup=1
+/product_image  emmc    /dev/block/platform/13500000.dwmmc0/by-name/product     flags=backup=1;flashimg=1
+/dtb            emmc    /dev/block/platform/13500000.dwmmc0/by-name/dtb         flags=display="DTB";backup=1;flashimg=1
+/dtbo           emmc    /dev/block/platform/13500000.dwmmc0/by-name/dtbo        flags=display="DTBO";backup=1;flashimg=1
+
+# External
+/external_sd    auto    /dev/block/mmcblk1p1    /dev/block/mmcblk1              flags=display="MicroSD";storage;wipeingui;removable
+/usb-otg        auto    /dev/block/sda1         /dev/block/sda                  flags=display="USB-OTG";storage;wipeingui;removable

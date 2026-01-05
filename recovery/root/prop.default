@@ -1,0 +1,3 @@
+# Additional prop settings
+ro.twrp.bootout=0
+ro.twrp.vendor_mount=1
