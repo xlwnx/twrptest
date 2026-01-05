@@ -7,7 +7,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Device items
 PRODUCT_PACKAGES += \
-    libpuresoftkeymasterdevice
+    dtb.img
 
 # Set default USB config
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
