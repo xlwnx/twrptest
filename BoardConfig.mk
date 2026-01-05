@@ -1,17 +1,11 @@
 DEVICE_PATH := device/samsung/a10
 
 # Architecture
-TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-a
-TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := generic
-
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv7-a-neon
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := generic
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := exynos7884
@@ -60,7 +54,7 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
@@ -76,8 +70,8 @@ TW_USE_NEW_MAGISK_INST_METHOD := true
 TW_DEVICE_VERSION := Antigravity_v1
 
 # Debugging
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
+TWRP_INCLUDE_LOGCAT := false
+TARGET_USES_LOGD := false
 
 # Use MTP
 RECOVERY_VARIANT := twrp
