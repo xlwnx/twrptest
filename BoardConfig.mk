@@ -18,7 +18,7 @@ TARGET_BOOTLOADER_BOARD_NAME := exynos7884
 TARGET_NO_BOOTLOADER := true
 
 # Platform
-TARGET_BOARD_PLATFORM := exynos7885
+TARGET_BOARD_PLATFORM := exynos7884
 
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive androidboot.bootdevice=13500000.dwmmc0 androidboot.baseband=apq
@@ -56,6 +56,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 # System-as-root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_SUPPRESS_SECURE_ERASE := true
+# BOARD_RAMDISK_USE_LZMA := true
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
@@ -66,9 +67,13 @@ TW_USE_TOOLBOX := true
 TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_CRYPTO := false
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+# Grafis & Display
+TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
+TW_NO_SCREEN_TIMEOUT := true
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_NTFS_3G := false

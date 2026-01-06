@@ -4,6 +4,9 @@ on init
     rm /efs
     mkdir /efs
     mkdir /sec_efs
+    mkdir /dev/usb-ffs 0770 shell shell
+    mkdir /dev/usb-ffs/adb 0770 shell shell
+    mount functionfs adb /dev/usb-ffs/adb uid=2000,gid=2000
 
 on boot
     # MTP
