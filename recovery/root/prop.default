@@ -1,3 +1,6 @@
 # Additional prop settings
 ro.twrp.bootout=0
 ro.twrp.vendor_mount=1
+ro.debuggable=1
+ro.adb.secure=0
+persist.sys.usb.config=mtp,adb
